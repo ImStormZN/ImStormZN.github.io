@@ -1,6 +1,6 @@
 
 // function([string1, string2],target id,[color1,color2])    
- consoleText(['Surpresa', 'Feliz', 'Amor'], 'text',['tomato','rebeccapurple','lightblue']);
+ consoleText(['Eu', 'te', 'amo'], 'text',['white','white','white']);
 
  document.getElementById("submit_btn").addEventListener('click', () => { 
 	window.location.href = "imagens.html"
