@@ -3,76 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <title>Surpresa para Você!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #282a2c;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
-            color: #e63946;
-        }
-        .question {
-            margin: 20px 0;
-        }
-        .photo-upload {
-            margin: 30px 0;
-        }
-        .button {
-            background-color: #457b9d;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .button:hover {
-            background-color: #1d3557;
-        }
-    </style>
 </head>
 <body>
 
-    <h1>Surpresa para Você!</h1>
+    <main>
 
-    <div class="question">
-        <label>1. Que dia começamos a namorar?</label><br>
-        <input type="text" placeholder="Sua resposta">
-    </div>
+        
 
-    <div class="question">
-        <label>2. Qual é o seu apelido?</label><br>
-        <input type="text" placeholder="Sua resposta">
-    </div>
+        <div class="forma">
 
-    <div class="question">
-        <label>3. Oi você me odeia?</label><br>
-        <input type="radio" name="odio" value="Sim"> Sim
-        <input type="radio" name="odio" value="Não"> Não
-    </div>
+            <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
 
-    <div class="question">
-        <label>4. Já ta podendo gozar?</label><br>
-        <input type="radio" name="gozar" value="Sim"> Sim
-        <input type="radio" name="gozar" value="Não"> Não
-    </div>
+            <div class="question">
+                <label>1. Que dia começamos a namorar?</label><br>
+                <input type="text" placeholder="Sua resposta">
+            </div>
+    
+            <div class="question">
+                <label>2. Qual é o seu apelido?</label><br>
+                <input type="text" placeholder="Sua resposta">
+            </div>
+    
+            <div class="question">
+                <label>3. Oi você me odeia?</label><br>
+                <input type="radio" name="odio" value="Sim"> Sim
+                <input type="radio" name="odio" value="Não"> Não
+            </div>
+    
+            <div class="question">
+                <label>4. Já ta podendo gozar?</label><br>
+                <input type="radio" name="gozar" value="Sim"> Sim
+                <input type="radio" name="gozar" value="Não"> Não
+            </div>
+    
+            <button class="button" onclick="revealSurprise()">Clique para a Surpresa!</button>
+    
+            <script>
+                function revealSurprise() {
+                    alert("Você é a razão do meu sorriso! ❤️");
+                }
+            </script>
+            <script type="text/javascript" src="index.js"></script>
+    
+        </div>
 
-    <div class="photo-upload">
-        <label for="photo">Envie uma foto sua:</label><br>
-        <input type="file" id="photo" accept="image/*">
-    </div>
+    </main>
 
-    <button class="button" onclick="revealSurprise()">Clique para a Surpresa!</button>
 
-    <script>
-        function revealSurprise() {
-            alert("Você é a razão do meu sorriso! ❤️");
-        }
-    </script>
+
+
+
 
 </body>
 </html>
