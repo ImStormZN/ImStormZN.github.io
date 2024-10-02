@@ -43,6 +43,13 @@ body {
 
 }
 
+input{
+
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    
+}
 
 .button {
     background-color: #0CABA8;
