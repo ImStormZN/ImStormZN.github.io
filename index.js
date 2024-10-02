@@ -2,6 +2,10 @@
 // function([string1, string2],target id,[color1,color2])    
  consoleText(['Surpresa', 'Feliz', 'Amor'], 'text',['tomato','rebeccapurple','lightblue']);
 
+ document.getElementById("submit_btn").addEventListener('click', () => { 
+	window.location.href = "imagens.html"
+})
+
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
   var visible = true;
